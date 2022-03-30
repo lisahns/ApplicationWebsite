@@ -1,0 +1,50 @@
+body {
+    background-color:#fffdfc;
+    font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+/*navbar*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    overflow:hidden;
+    font-size: 20px;
+  }
+ 
+    #navbar-item {
+      padding: 30px;
+      float: right;
+    }
+    #navbar-icon{
+        float:left;
+        padding: 30px;
+    }
+    a:link {
+        text-decoration: none;
+        color:#66615D;
+      }
+  
+
+    .enokitake-container {
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:100px;
+  width: 20%;
+    }
+    .a {
+        display:flex;
+        justify-content: center;
+    }
+    
+    .b {
+        fill: #fff3ea;
+        fill-rule: evenodd;
+        stroke: #946114;
+        stroke-miterlimit: 10;
+        stroke-width: 0.25px;
+      }
+ 
