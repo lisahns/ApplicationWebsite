@@ -6,24 +6,11 @@ font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
+
 /*navbar*/
 ul {
     list-style-type:none;
 }
-.navigation-bar {
-    margin: 0;
-    overflow:hidden;
-    font-size: 20px;
-  }
- 
-    #navbar-item {
-      padding: 30px;
-      float: right;
-    }
-    #navbar-icon{
-        float:left;
-        padding: 10px;
-    }
     a:link {
         color:#66615D;
         text-decoration: none;
@@ -31,9 +18,7 @@ ul {
       a:visited {
         color:#66615D;
       }
-  #icon {
-      width:40px;
-  }
+ 
 
     .enokitake-container {
         display: block;
@@ -151,6 +136,49 @@ ul {
         margin-left: auto;
         margin-right: auto;
         width: 70%;
-        font-size:17px;
-        padding:100px;  
+        font-size:18px;
+        padding:5rem;  
+    }
+
+
+/* screen size */
+    @media only screen and (max-width: 600px) {
+
+        
+#icon {
+    width:2rem;
+}
+#navbar-item {
+    padding:0.5rem;
+    display:flex;
+    justify-content:right;
+}
+#navbar-icon {
+    display:flex;
+    align-items:flex-start;
+   justify-content:flex-start;
+   
+}
+
+
+
+    }
+    
+    @media only screen and (min-width: 600px) {
+        .navigation-bar {
+            margin: 0;
+            overflow:hidden;
+            font-size: 1.2rem;
+          }
+        #navbar-item {
+            padding: 2rem;
+            float: right;
+          }
+          #navbar-icon{
+              float:left;
+              padding: 2rem;
+          }
+          #icon {
+            width:2rem;
+        }
     }
