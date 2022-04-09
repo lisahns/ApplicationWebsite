@@ -6,7 +6,6 @@ const dotNav = document.querySelector(".carousel__nav");
 const dots = Array.from(dotNav.children);
 
 const slideWidth = slides[0].getBoundingClientRect().width;
-console.log(slideWidth);
 
 //arrange slides next to one another
 const setSlidePosition = (slide, index) => {
@@ -81,3 +80,22 @@ moveToSlide(track, currentSlide, targetSlide);
 updateDots(currentDot, targetDot);
 hideShowArrows(slides, previousButton, nextButton, targetIndex);
 });
+
+//tabs
+
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabContents = document.querySelectorAll('[data-tab-content]');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active')
+        })
+        tabs.forEach(tab => {
+            tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+        target.classList.add('active')
+    })
+})

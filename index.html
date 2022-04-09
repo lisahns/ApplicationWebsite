@@ -11,16 +11,26 @@
     <title>Lisa Hanes</title>
   </head>
   <body>
-<nav>
-  <ul class="navigation-bar">
-    <li id="navbar-item"><a href="./fac-prompts.html">FaC prompts</a></li>
-    <li id="navbar-item"><a href="./about-me.html" >about me</a></li>
-    <li id="navbar-icon"><a href="https://github.com/lisahns" target="_blank"><img id="icon" src="./images/GitHub-Mark-64px.png" alt="Github icon"></img></a></li>
-    <li id="navbar-icon"><a href="https://www.freecodecamp.org/lisahns" target="_blank"><img id="icon" src="./images/4691243_freecodecamp_icon.png" alt="FreeCodeCamp Icon"></img></a></li>
-    </ul>
-</nav>
-<main>
 
+
+<main>
+<ul class="navigation-bar">
+  <li data-tab-target="#fac-prompts" class="tab">FaC prompts</li>
+  <li data-tab-target="#about-me" class="tab">about me</li>
+  <li data-tab-target="#home" class="active tab">home</li>
+  <li id="navbar-icon"><a href="https://github.com/lisahns" target="_blank"><img id="icon" src="./images/GitHub-Mark-64px.png" alt="Github icon"></img></a></li>
+    <li id="navbar-icon"><a href="https://www.freecodecamp.org/lisahns" target="_blank"><img id="icon" src="./images/4691243_freecodecamp_icon.png" alt="FreeCodeCamp Icon"></img></a></li>
+    
+</ul>
+
+<!-- 
+  - carousel is broken: only feature slide shows
+  - when screen width smaller than 600px: fix navbar icons
+  - try and use 'symbol' 'use' for enokitake container
+ -->
+
+<div class="tab-content">
+  <div id="home" data-tab-content class="active">
     <!-- <svg>
     <use href="#enokitake"></use>
 </svg> -->
@@ -594,6 +604,82 @@
         </path>
       </svg>
     </div>
+  </div>
+
+  <div id="about-me" data-tab-content>
+<p class ="about-me">
+  Hello! I'm Lisa Hanes (she/her) and I am hoping to pursue a career in tech. 
+  I grew up in Germany and have been living in London for nearly four years and consider it my new home. 
+  Before coming to London, I went backpacking in the USA and Mexico, where I volunteered for all sorts 
+  of different companies and charities. Soon I will be graduating from the University of Westminster with 
+  a BA (Hons) in Photography. My interests are in alternative photographic processes, using plant-based 
+  materials to substitute conventional photographic materials, which are harmful to the environment.
+<br><br>
+I had my first coding experience last year, where I attended an 8-week introduction course hosted 
+by <i>Code First Girls</i>. I really enjoyed learning about programming and being able to solve problems 
+and build projects. This made me commit to becoming a web developer. Over the past few months, I have 
+learned a lot about HTML, CSS and JavaScript with the help of friends, the weekly meetups organised by 
+FaC and the discord channel. <br><br>
+The tech industry still suffers form great social disparity and programmes provided by FaC help close that gap. 
+Being surrounded by people from the coding community, I realised that tech can be the means to build a better 
+future that offers equal chances for everyone, which I would like to be a part of. <br><br>
+Additionally, I really enjoy the peer-led learning approach that <i>Founders and Coders</i> practices. Not only is it a great pedagogical method which makes 
+learning so much more enjoyable and fun, but it is also fantastic opportunity to develop a set of other 
+skills, such as working in a team or communication skills, which will be relevant in my future career. 
+I am confident that my skills and enthusiasm will allow me to make the most of my time with <i>FaC</i>. I am 
+looking forward to the opportunity to be a part of the <i>FaC</i> community and work alongside other talented 
+people.
+</p>
+  </div>
+
+  <div id="fac-prompts" data-tab-content>
+  <div class="carousel">
+    <div class="carousel__track_container">
+    <ul class="carousel__track">
+    <li class="carousel__slide current-slide">
+        <a href="https://github.com/lisahns/fac-tribute-page" target="_blank"><img class="carousel__image" src="./images/1 Tribute Page.jpg" alt="Tribute Page"></a>
+    </li>
+    <li class="carousel__slide">
+        <a href="https://github.com/lisahns/2-functions" target="_blank"><img class="carousel__image" src="./images/2 Functions.jpg" alt="Functions"></a>
+    </li>
+    <li class="carousel__slide">
+        <a href="https://github.com/lisahns/3-DOM" target="_blank"><img class="carousel__image" src="./images/3 DOM.jpg" alt="DOM"></a>
+    </li>
+    <li class="carousel__slide">
+        <a href="https://github.com/lisahns/4-arrays" target="_blank"><img class="carousel__image" src="./images/4 Array Methods.jpg" alt="Array Methods"></a>
+    </li>
+    <li class="carousel__slide">
+        <a href="https://github.com/lisahns/6-flexbox" target="_blank"><img class="carousel__image" src="./images/5 Flexbox.jpg" alt="Flexbox"></a>
+    </li>
+    <li class="carousel__slide">
+        <a href="https://github.com/lisahns/7-objects" target="_blank"><img class="carousel__image" src="./images/6 Objects.jpg" alt="Objects"></a>
+    </li>
+    <li class="carousel__slide">
+        <a href="https://github.com/lisahns/8-feature" target="_blank"><img class="carousel__image" src="./images/7 Feature.jpg" alt="Feature"></a>
+    </li>
+</ul>
+</div>
+
+<button class="carousel__button carousel__button--left is-hidden">
+    <img class=".carousel__button-img" src="./images/chevron-large-left(32x32)@1x.png" alt="Button Left">
+</button>
+    <button class="carousel__button carousel__button--right">
+        <img class=".carousel__button-img" src="./images/chevron-large-right(32x32)@1x.png" alt="Button Right">
+    </button>
+
+    <div class="carousel__nav">
+    <button class="carousel__indicator current-slide"></button>
+    <button class="carousel__indicator"></button>
+    <button class="carousel__indicator"></button>
+    <button class="carousel__indicator"></button>
+    <button class="carousel__indicator"></button>
+    <button class="carousel__indicator"></button>
+    <button class="carousel__indicator"></button>
+</div>
+</div>
+
+</div>
+  </div>
   </main>
     <footer>
       © Lisa Hanes

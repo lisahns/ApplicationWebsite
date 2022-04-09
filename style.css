@@ -4,6 +4,7 @@ body {
 font-family: 'Roboto', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Zen Kaku Gothic Antique', sans-serif;
+color:#66615D;
 }
 
 
@@ -18,7 +19,18 @@ ul {
       a:visited {
         color:#66615D;
       }
- 
+ .tab {
+    cursor:pointer;
+ }
+ .tab.active {
+background-color:#ffdbc9;
+ }
+ .tab:hover{
+     background-color:#ffece3;
+ }
+ #navbar-icon{
+    cursor:pointer;
+ }
 
     .enokitake-container {
         display: block;
@@ -148,7 +160,7 @@ ul {
 #icon {
     width:2rem;
 }
-#navbar-item {
+.tab {
     padding:0.5rem;
     display:flex;
     justify-content:right;
@@ -170,7 +182,7 @@ ul {
             overflow:hidden;
             font-size: 1.2rem;
           }
-        #navbar-item {
+        .tab {
             padding: 2rem;
             float: right;
           }
@@ -181,4 +193,12 @@ ul {
           #icon {
             width:2rem;
         }
+    }
+
+
+    [data-tab-content]{
+        display:none;
+    }
+    .active[data-tab-content]{
+        display:block;
     }
