@@ -89,7 +89,7 @@ updateDots(currentDot, targetDot);
 hideShowArrows(slides, previousButton, nextButton, targetIndex);
 });
 };    
-carousel()
+
 
 //tabs
 
