@@ -11,6 +11,7 @@ color:#66615D;
 /*navbar*/
 ul {
     list-style-type:none;
+    
 }
     a:link {
         color:#66615D;
@@ -32,18 +33,7 @@ background-color:#ffdbc9;
     cursor:pointer;
  }
 
-    .enokitake-container {
-        display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top:60px;
-  width: 20%;
-    }
-    .a {
-        display:flex;
-        justify-content: center;
-    }
-    
+
     .b {
         fill: #fff3ea;
         fill-rule: evenodd;
@@ -56,16 +46,11 @@ background-color:#ffdbc9;
         display: flex;
       justify-content: flex-end;
       font-size:10px;
-      margin-top:20px;
+      margin-top:10px;
       }
 
 /*carousel*/
-    .carousel {
-        position: relative;
-        height: 400px;
-        max-width: 400px;
-        margin: 80px auto;    
-    }
+    
     
     .carousel__image{
         width:100%;
@@ -74,7 +59,6 @@ background-color:#ffdbc9;
     }
     
     .carousel__track_container{
-        
         height:100%;
         position:relative;
         overflow: hidden;
@@ -154,34 +138,60 @@ background-color:#ffdbc9;
 
 
 /* screen size */
-    @media only screen and (max-width: 600px) {
-
-        
+    @media only screen and (max-width: 700px) {
+   .navbar {
+       width:100vw;
+       display:flex;
+       flex-direction: row;
+   }    
+    .align-right {
+    justify-self:start;
+    margin-right:50vw;
+    }
+    .align-left {
+        justify-self:end;
+        margin-top:5vw;
+    }
 #icon {
     width:2rem;
 }
 .tab {
     padding:0.5rem;
     display:flex;
-    justify-content:right;
 }
 #navbar-icon {
     display:flex;
-    align-items:flex-start;
-   justify-content:flex-start;
    
 }
-
-
+.carousel {
+    position: relative;
+    height: 180px;
+    max-width: 180px;
+    margin: 0 auto;
+}
+.enokitake-container {
+    display:flex;
+    justify-content: center;
+margin-left: auto;
+margin-right: auto;
+margin-top:60px;
+width:180px;
+height:180px;
+}
+.navigation-bar {
+    margin: 0;
+    padding-inline-start:5vw;
+  }
 
     }
     
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 700px) {
         .navigation-bar {
             margin: 0;
             overflow:hidden;
             font-size: 1.2rem;
           }
+    
         .tab {
             padding: 2rem;
             float: right;
@@ -192,6 +202,22 @@ background-color:#ffdbc9;
           }
           #icon {
             width:2rem;
+        }
+        
+        .carousel {
+            position: relative;
+            width: 25vw;
+            height: 25vw;
+            margin: 2rem auto;    
+        }
+        .enokitake-container {
+            display:flex;
+            justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:60px;
+        width:28vw;
+        height:28vw;
         }
     }
 
